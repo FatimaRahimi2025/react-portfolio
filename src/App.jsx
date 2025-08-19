@@ -1,6 +1,9 @@
+import UseMediaQurey from "./hooks/useMediaQurey";
 function App(){
   return(
-    <h1>Hello Afghanistan</h1>
+   <>
+   <UseMediaQurey />
+   </>
   )
 }
 export default App;
