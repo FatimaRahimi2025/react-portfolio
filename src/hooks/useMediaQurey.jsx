@@ -16,4 +16,4 @@ const USeMediaQurey = (qurey) => {
     return matches;
 }
 
-export default UseMediaQurey;
+export default USeMediaQurey;
