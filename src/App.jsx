@@ -1,6 +1,6 @@
 import Navbar from "./scenes/Navbar"
 import { useEffect, useState } from "react";
-import Landing from './scenes/Landing'
+import Landing  from './scenes/Landing';
 import UseMediaQurey from "./hooks/useMediaQurey";
 import DotGroup from "./scenes/DotGroup";
 
@@ -34,6 +34,7 @@ function App(){
         <Landing setSelectedPage={setSelectedPage}/>
       </div>
     </div>
+    
   )
 }
 export default App;
