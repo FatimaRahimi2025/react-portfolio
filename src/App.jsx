@@ -1,5 +1,7 @@
-import Navbar from "./scenes/Navbar"
+import Navbar from "./scenes/Navbar";
+import MySkills from './scenes/MySkills';
 import { useEffect, useState } from "react";
+import LineGradient from './scenes/Components/LineGradient';
 import Landing  from './scenes/Landing';
 import UseMediaQurey from "./hooks/useMediaQurey";
 import DotGroup from "./scenes/DotGroup";
@@ -32,6 +34,10 @@ function App(){
           />
         )}
         <Landing setSelectedPage={setSelectedPage}/>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
       </div>
     </div>
     

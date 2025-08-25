@@ -1,4 +1,4 @@
-import SocialMediaIcons from '../scenes/SocialMediaIcons'
+ import SocialMediaIcons from './Components/SocialMedia.jsx';
 import USeMediaQurey from "../hooks/useMediaQurey";
 import { delay, motion } from 'framer-motion';
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -42,13 +42,13 @@ const Landing = ({setSelectedPage}) => {
                </p>
               </motion.div>
 
-              {/* CALL TO ACTIONS */}
-              <motion.div
-              className="flex"
+             {/* CALL TO ACTIONS */} 
+             <motion.div
+              className="flex gap-4 mt-5 justify-center md:justify-start"
               initial="hidden"
               whileInView="visible"
-              viewport={{once : true, amount: 0.5}}
-              transition={{delay: 0.2, duration: 0.5}}
+              viewport={{once : true, amount: 0.5 }}
+              transition={{delay: 0.2, duration: 0.5 }}
               variants={{
                  hidden: {opacity: 0, x: -50},
                  visible: {opacity: 1, x: 0},
@@ -59,15 +59,15 @@ const Landing = ({setSelectedPage}) => {
                 href="#contact">
                     Contact Me
                 </AnchorLink>
-                <AnchorLink className="bg-gradient-rainblue text-deep-blue rounded-r-sm py-0.5 pr-0.5
-                hover:bg-blue hover:text-white transition duration-500" onClick={() => setSelectedPage("contact")}
+                <AnchorLink className="bg-gradient-rainblue rounded-r-sm py-0.5 pr-0.5"
+                 onClick={() => setSelectedPage("contact")}
                     href="#contact">
                         <div
                         className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center
-                        justify-center font-playfair px-10">Let,s talk. </div></AnchorLink>
-              </motion.div>
+                        justify-center font-playfair px-10">Let's talk. </div></AnchorLink>
+              </motion.div> 
 
-              <motion className="flex mt-5 justify-center  md:justify-start"
+              <motion.div className="flex mt-5 justify-center  md:justify-start"
               initial="hidden"
               whileInView="visible"
               viewport={{once: true, amount: 0.5}}
@@ -78,12 +78,15 @@ const Landing = ({setSelectedPage}) => {
               }}
               >
                 <SocialMediaIcons />
-              </motion>
+              </motion.div>
             </div>
 
     
-        </section>
-    )
-}
+     </section>
+  )
+ }
 
 export default Landing;
+
+
+
